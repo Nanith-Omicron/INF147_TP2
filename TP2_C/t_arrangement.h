@@ -22,11 +22,11 @@ typedef struct{
 
 
 /*
-*3 prototype à définir :
+*3 prototype Edéfinir :
 *
 *        - Initialiser un t_arrage_bits (création du tableau de t_permut_bits".
 *        - Crypter un tableau void*.
-*        - Décrypter un tableau void* préalablement crypté par la méthode prévue.
+*        - Décrypter un tableau void* préalablement cryptEpar la méthode prévue.
 *
 * Tous les autres sous-programmes sont privés (dans le .cpp)
 */
