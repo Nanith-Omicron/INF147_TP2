@@ -31,7 +31,7 @@
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
 
 
-int test_voirbloc();
+int test_voirbloc();///112233
 
  
 int main(int argc, char** argv)
