@@ -15,8 +15,8 @@ void printByte(bloc * a) {
 
 	for (size_t i = 0; i < DeepthOfEachBloc; i++)
 	{
-		if( i )
-	}
+	 
+	} 
 
 }
 void renderBlock() {

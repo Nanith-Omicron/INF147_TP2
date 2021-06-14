@@ -15,8 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TP2_C.cpp">
+    <ClCompile Include="MainFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mtwister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="op_bits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t_arrangement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtwister.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="op_bits.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_arrangement.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_permutation.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

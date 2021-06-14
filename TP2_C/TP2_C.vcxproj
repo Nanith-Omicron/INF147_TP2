@@ -151,7 +151,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TP2_C.cpp" />
+    <ClCompile Include="MainFile.cpp" />
+    <ClCompile Include="mtwister.cpp" />
+    <ClCompile Include="op_bits.cpp" />
+    <ClCompile Include="t_arrangement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mtwister.h" />
+    <ClInclude Include="op_bits.h" />
+    <ClInclude Include="t_arrangement.h" />
+    <ClInclude Include="t_permutation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
