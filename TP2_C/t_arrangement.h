@@ -36,8 +36,6 @@ typedef struct{
 
 
 
-void permute2Bits(void* vTableau, unsigned int position, int decalage);
-int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation);
 void initialiser_Tableau();
 
 #endif __T_ARRANGEMENT__
