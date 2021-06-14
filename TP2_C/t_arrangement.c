@@ -111,7 +111,17 @@ void permute2Bits(void* vTableau, unsigned int position, unsigned int decalage)
 
 	 <hr width="100%" height="5">
 */
-//** **************************************************************************
+ void permute2Bits(void* vTableau, unsigned int position, int decalage)
+{
+	 //Creer un nouveau T_permut_bits
+	 t_permut_bits temp;
+	 temp.n1 = position;
+	 temp.n2 = position + decalage;
+
+
+
+ }
+	 //** **************************************************************************
 int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation)
 {
 
