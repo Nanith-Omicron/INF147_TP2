@@ -27,14 +27,13 @@
 #include <stdlib.h>
 #include <assert.h>
 
-
+#define DEGUB
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
 
 
 int test_voirbloc();
 
-
-#if DEGUB
+ 
 int main(int argc, char** argv)
 {
 
@@ -43,7 +42,7 @@ int main(int argc, char** argv)
 	return EXIT_SUCCESS;
 }
 
-#else
+ 
 
 int test_voirbloc()
 {
@@ -81,4 +80,4 @@ int test_voirbloc()
 	return EXIT_SUCCESS;
 }
 
-#endif
+ 
