@@ -22,8 +22,8 @@
 #include "t_arrangement.h"
 #include <stdio.h>
 
-//void permute2Bits( void * vTableau, unsigned int position, int decalage);
-//int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation);
+void permute2Bits( void * vTableau, unsigned int position, int decalage);
+int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation);
 
 
 /*!  @brief                             Implémentation de la procedure pour 

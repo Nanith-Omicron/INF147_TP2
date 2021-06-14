@@ -31,14 +31,14 @@
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
 
 
-int test_voirbloc();///112233
+int test_voirbloc();
 
  
 int main(int argc, char** argv)
 {
 
-	//allo test test - Benoit
 	test_voirbloc();
+
 	return EXIT_SUCCESS;
 }
 
@@ -46,18 +46,21 @@ int main(int argc, char** argv)
 
 int test_voirbloc()
 {
-	unsigned int TEST_Taille =5;
-	unsigned int TEST_Tableau[5] = {
+
+
+	/*
+	unsigned int TEST_Taille =10;
+	unsigned int TEST_Tableau[10] = {
 	0xFFFFFFFF,
 	1,
 	2,
 	4,
-	8/*,
+	8,
 	16,
 	32,
 	64,
 	128,
-	256	*/
+	256	
 	};	
 
 	unsigned int TEST_NbBitsAfficher = 8;
@@ -70,10 +73,10 @@ int test_voirbloc()
 
 	voirbloc(TEST_Tableau, TEST_Taille, TEST_NbBitsAfficher);
 
-	permute2Blocs(TEST_Tableau, 5, &tablo);
+	permute2Blocs(TEST_Tableau, 10, &tablo);
 
 	voirbloc(TEST_Tableau, TEST_Taille, TEST_NbBitsAfficher);
-
+	*/
 
 	system("pause");
 
