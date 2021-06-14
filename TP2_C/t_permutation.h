@@ -1,8 +1,7 @@
 ﻿#ifndef __T_PERMUTATION__
 #define __T_PERMUTATION__
 
-#include "op_bits.h"
-
+#include "op_bits.h"//lol
 //Représenté par la taille des deux blocs de bits à permuter 
 //et un couple de deux entiers (n1, n2) donnant la position des deux blocs.
 typedef struct{
