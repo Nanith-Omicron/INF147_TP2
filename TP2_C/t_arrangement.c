@@ -147,27 +147,36 @@ int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation
 }
 
 
-
-/*!  @brief								
-
-
-	 @return							Aucun retour
-
-	 @note                              Fonction fantome pour l'instant
-
-	 <hr width="100%" height="5">
-	 <b>Historique</b>
-	 <hr width="100%" height="1">
-
-	 @date                              12 juin 2021
-	 @author                            Benoit Houle
-	 @note                              Fonction fantome
-
-	 <hr width="100%" height="5">
-*/
-//** **************************************************************************
-void initialiser_Tableau()
+t_arrange_bits initialiser_Instruction(
+	int iNombrePermutation,
+	int iTailleOctets,
+	int iBornMin,
+	int iBornMax,
+	unsigned long Clef // A quoi ca  sert??
+)
 {
+	t_arrange_bits nomTemp;
 
+	int i;
+		
+	nomTemp.nb_permuts = iNombrePermutation;
+
+	for (i = 0; i < iNombrePermutation; i++)
+	{
+		/*??taille octect - taille bloc pour la born max??*/
+		nomTemp.tablo[i].taille_bloc = (int)mt_randf((double)iBornMin, (double)iBornMax);
+
+		nomTemp.tablo[i].n1 = mt_randi(iTailleOctets * 8 / nomTemp.tablo[i].taille_bloc) - 1;
+		nomTemp.tablo[i].n2 = mt_randi(iTailleOctets * 8 / nomTemp.tablo[i].taille_bloc) - 1;
+
+		printf("i          : [%d]\n", i);
+		printf("taille_bloc: [%d]\n", nomTemp.tablo[i].taille_bloc);
+		printf("taille max : [%d]\n", (iTailleOctets * 8 / nomTemp.tablo[i].taille_bloc));
+		printf("n1           [%d]\n", nomTemp.tablo[i].n1);
+		printf("n2           [%d]\n\n", nomTemp.tablo[i].n2);
+
+	}
+	
+
+	return nomTemp;
 }
-

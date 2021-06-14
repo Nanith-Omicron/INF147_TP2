@@ -37,6 +37,7 @@ int test_voirbloc();
 int main(int argc, char** argv)
 {
 
+
 	test_voirbloc();
 
 	return EXIT_SUCCESS;
@@ -47,6 +48,13 @@ int main(int argc, char** argv)
 int test_voirbloc()
 {
 
+	initialiser_Instruction(
+		16, //int iNombrePermutation,
+		40, //int iTailleOctets,
+		3, //int iBornMin,
+		10, //int iBornMax,
+		0 //unsigned long Clef
+	);
 
 	/*
 	unsigned int TEST_Taille =10;
