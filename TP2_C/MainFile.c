@@ -37,6 +37,8 @@ int test_voirbloc();///112233
 int main(int argc, char** argv)
 {
 
+	//allo test test - Benoit
+
 	test_voirbloc();
 
 	return EXIT_SUCCESS;
