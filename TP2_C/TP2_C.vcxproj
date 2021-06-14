@@ -151,10 +151,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MainFile.cpp" />
-    <ClCompile Include="mtwister.cpp" />
-    <ClCompile Include="op_bits.cpp" />
-    <ClCompile Include="t_arrangement.cpp" />
+    <ClCompile Include="MainFile.c" />
+    <ClCompile Include="mtwister.c" />
+    <ClCompile Include="op_bits.c" />
+    <ClCompile Include="t_arrangement.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mtwister.h" />

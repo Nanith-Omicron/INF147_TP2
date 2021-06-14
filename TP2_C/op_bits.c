@@ -120,20 +120,22 @@ int voirbloc(unsigned int uTableauAfficher[], unsigned int uTaille, unsigned int
 		{
 
 			printf("%i", get_bit(uTableauAfficher[uCaseTraite], (NB_BITS - 1 - uBit_A_Afficher)));
+			//printf("%i", get_bit(uTableauAfficher[uCaseTraite], (uBit_A_Afficher)));
 
 			uBitsAfficher++;
 			uBit_A_Afficher++;
-
-			if (uBit_A_Afficher == NB_BITS) {
-				uBit_A_Afficher = 0;
-				uCaseTraite++;
-			}
 
 			if (uBitsAfficher == uNbBitsAfficher) {
 
 				printf("\n%-2.1u : ", uOctetsAffiche++);
 				uBitsAfficher = 0;
 			}
+
+			if (uBit_A_Afficher == INT_BIT) {
+				uBit_A_Afficher = 0;
+				uCaseTraite++;
+			}
+
 		}
 		printf("\n----------------------------------------------\n\n");
 

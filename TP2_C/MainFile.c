@@ -47,7 +47,7 @@ int main(int argc, char** argv)
 
 int test_voirbloc()
 {
-	unsigned int TEST_Taille = 5;
+	unsigned int TEST_Taille =5;
 	unsigned int TEST_Tableau[5] = {
 	0xFFFFFFFF,
 	1,
@@ -59,7 +59,7 @@ int test_voirbloc()
 	64,
 	128,
 	256	*/
-	};
+	};	
 
 	unsigned int TEST_NbBitsAfficher = 8;
 

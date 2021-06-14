@@ -9,14 +9,14 @@
 
 /*  
  les int type de base sur nos petites machines ont une représentation
- à 4 bytes(32 bits) au début du vingt et unième siècle 
+ E4 bytes(32 bits) au début du vingt et unième siècle 
  */
 
 /* 
  L'ordre des bits dans un entier selon la tradition 
- commence à 0 , ordre du bit le moins significatif  
+ commence E0 , ordre du bit le moins significatif  
  jusqu'au nombre total de bits -1
- Avec 32 bits, l'ordre peut varier de 0 à 31  inclusivement
+ Avec 32 bits, l'ordre peut varier de 0 E31  inclusivement
 
  le parametre ordre dans les fonctions offertes plus bas
  est partout positif de type unsigned int
@@ -28,16 +28,16 @@
 
  obtenir la valeur d'un bit (0 , 1) avec la fonction  get_bit(nombre, ordre)
 
- obtenir la valeur obtenue en forcant un bit à 1 dans un entier avec 
+ obtenir la valeur obtenue en forcant un bit E1 dans un entier avec 
  la fonction  set_bit(nombre, ordre)
 
- obtenir la valeur obtenue en forcant un bit à 0 dans un entier avec 
+ obtenir la valeur obtenue en forcant un bit E0 dans un entier avec 
  la fonction  clear_bit(nombre, ordre)
 
  obtenir la valeur obtenue en forcant l'inversion d'un bit dans un 
  entier avec  la fonction  flip_bit(nombre, ordre)
 
- donner accès à une représentation des bits dans une chaine de caractères bits2string(nombre)
+ donner accès Eune représentation des bits dans une chaine de caractères bits2string(nombre)
 
  */
 
@@ -66,7 +66,7 @@
 
 
 
-/* l'intervalle d'ordre acceptable ira de 0 à  NB_BITS-1 */
+/* l'intervalle d'ordre acceptable ira de 0 E NB_BITS-1 */
 
 /*****************************************************/
 
@@ -75,8 +75,8 @@
 
 /******************* GET_BIT **********************/
 /* 
- donne la valeur du  bit d'ordre spécifié.		
- PARAMETRES : nombre , un entier non signé						
+ donne la valeur du  bit d'ordre spécifiE		
+ PARAMETRES : nombre , un entier non signE					
  ordre , spécifie le bit voulu dans nombre. 
  RETOUR : 0 ou 1 	
 
@@ -90,10 +90,10 @@ int get_bit(unsigned int nombre, unsigned int ordre);
 
 /*********************** SET_BIT **************************/
 /* 
- donne la valeur du nombre avec le bit d'ordre spécifié mis à 1 
+ donne la valeur du nombre avec le bit d'ordre spécifiEmis E1 
  PARAMETRES : nombre , un entier quelconque					
- ordre , spécifie le bit mis à 1 dans nombre. 
- RETOUR : la valeur obtenue du paramètre avec ce bit à 1		
+ ordre , spécifie le bit mis E1 dans nombre. 
+ RETOUR : la valeur obtenue du paramètre avec ce bit E1		
 
  SPECIFICATIONS :								
  Si ordre n'est pas dans l'intervalle correct
@@ -105,10 +105,10 @@ unsigned int set_bit(unsigned int nombre, unsigned int ordre);
 
 /****************** CLEAR_BIT **************************/
 /* 
- donne la valeur du nombre  avec le bit d'ordre spécifié mis à 0 
+ donne la valeur du nombre  avec le bit d'ordre spécifiEmis E0 
  PARAMETRES : nombre , un entier quelconque						
- ordre , spécifie le bit mis à 0 dans nombre
- RETOUR : la valeur obtenue du paramètre avec ce bit à 0	
+ ordre , spécifie le bit mis E0 dans nombre
+ RETOUR : la valeur obtenue du paramètre avec ce bit E0	
 
  SPECIFICATIONS :								
  Si ordre n'est pas dans l'intervalle correct 
@@ -120,11 +120,11 @@ unsigned int clear_bit(unsigned int nombre, unsigned int ordre);
 
 /******************** FLIP_BIT *************************/
 /* 
- donne la valeur du nombre reçu  avec le bit inversé 
- d'ordre spécifié
+ donne la valeur du nombre reçu  avec le bit inversE
+ d'ordre spécifiE
  Entrée : nombre : un entier positif					
- ordre : spécifie le bit  à inverser dans nombre. 
- RETOUR : la valeur obtenue du paramètre avec ce bit inversé					
+ ordre : spécifie le bit  Einverser dans nombre. 
+ RETOUR : la valeur obtenue du paramètre avec ce bit inversE				
  SPECIFICATIONS :							
  Si ordre n'est pas dans l'intervalle correct 
  la fonction retourne la valeur reçue
@@ -137,7 +137,7 @@ unsigned int flip_bit(unsigned int nombre, unsigned int ordre);
 /* 
  donne une représentation string ( chaine de caractère constante) aux
  bits du nombre reçu.        
- PARAMETRE : nombre , un entier non signé		
+ PARAMETRE : nombre , un entier non signE	
  RETOUR : une chaine constante								
  SPECIFICATIONS :								
  Les bits sont donnés dans la string du moins significatif au plus 
@@ -153,7 +153,7 @@ const char * bits2string(unsigned int nombre);
 
 
 /*!  @brief                    Affiche un tableau 1 dimention en 2 dimention
-*                              avec un nombre de colonnes specifié
+*                              avec un nombre de colonnes specifiE
 
      @param   unsigned int *   Tableau a afficher      
      @param   unsigned int     Taille du tableau en octets

@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainFile.cpp">
+    <ClCompile Include="MainFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mtwister.cpp">
+    <ClCompile Include="mtwister.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="op_bits.cpp">
+    <ClCompile Include="op_bits.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t_arrangement.cpp">
+    <ClCompile Include="t_arrangement.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

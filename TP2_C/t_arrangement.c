@@ -1,4 +1,4 @@
-/*!  @file                              t_arrangement.c
+/*!  @file                              t_arrangement.cpp
 	 @version                           1.00
 	 @brief                             Implémentation de...
 
@@ -26,14 +26,14 @@
 //int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation);
 
 
-/*!  @brief                             Implémentation de la procedure pour
-										permuter 2 bits dans un tableau
+/*!  @brief                             Implémentation de la procedure pour 
+										permuter 2 bits dans un tableau 
 										d'entier.
 
-	 @param   void*					    Tableau a afficher
-	 @param   unsigned int				Position du premier bit a
+	 @param   void*					    Tableau a afficher      
+     @param   unsigned int				Position du premier bit a 
 										échanger de place
-	 @param   unsigned int				Décalage enter le premier et 2e bit
+     @param   unsigned int				Décalage enter le premier et 2e bit
 										a échanger de place.
 
 	 @return							Aucun retour
@@ -80,7 +80,7 @@ void permute2Bits(void* vTableau, unsigned int position, unsigned int decalage)
 	Tableau[numCase2] = (bit2) ?
 		set_bit(Tableau[numCase2], posBit2Case) :
 		clear_bit(Tableau[numCase2], posBit2Case);
-
+	
 }
 
 /*!  @brief                             Implémentation de la procedure pour
@@ -103,7 +103,7 @@ void permute2Bits(void* vTableau, unsigned int position, unsigned int decalage)
 
 	 @date                              12 juin 2021
 	 @author                            Benoit Houle
-	 @note                              Entrée originale du code.
+     @note                              Entrée originale du code.
 
 	 @date                              13 juin 2021
 	 @author                            Benoit Houle
@@ -112,7 +112,7 @@ void permute2Bits(void* vTableau, unsigned int position, unsigned int decalage)
 	 <hr width="100%" height="5">
 */
 //** **************************************************************************
-int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation)
+int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation)
 {
 
 	int iCodeErreur = EXIT_SUCCESS;
@@ -123,12 +123,12 @@ int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation
 
 	int iDecalage = posBit2 - posBit1;
 
-	if ((posBit2 + t_Info_Permutation->taille_bloc) > (iTaille * INT_BIT))
+	if ((posBit2 + t_Info_Permutation->taille_bloc) > (iTaille  * INT_BIT))
 	{
 		iCodeErreur = EXIT_FAILURE;
 		printf("EXIT_FAILURE\n");
 	}
-	else
+	else 
 	{
 		if (t_Info_Permutation->n1 > t_Info_Permutation->n2)
 		{
@@ -137,7 +137,7 @@ int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation
 			t_Info_Permutation->n2 = iTemporaire;
 		}
 
-		for (i = posBit1; i < t_Info_Permutation->taille_bloc; i++)
+		for ( i = posBit1; i < t_Info_Permutation->taille_bloc; i++)
 		{
 			permute2Bits(vTableau, i, iDecalage);
 		}
@@ -148,7 +148,7 @@ int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation
 
 
 
-/*!  @brief
+/*!  @brief								
 
 
 	 @return							Aucun retour
