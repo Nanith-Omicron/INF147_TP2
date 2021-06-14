@@ -21,23 +21,20 @@
 
 #include "op_bits.h"
 #include "mtwister.h"
-#include "t_permutation.h"
 #include "t_arrangement.h"
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
 
-// TODO PUT THERE IN 
-#define MAX_BITS 11
-#define GetBit(input,n)((input) >> (n) & 1)
-#define setBit(input,n)((input) |= 1 << (n))
-#define unsetBit(input,n)((input) &= ~(1 << (n)))
 
 int test_voirbloc();
 
+
+#if DEGUB
 int main(int argc, char** argv)
 {
 
@@ -46,60 +43,42 @@ int main(int argc, char** argv)
 	return EXIT_SUCCESS;
 }
 
-
-//TODO BAD
-void invertBlock(int a ,int b,unsigned int* tab, int max)
-{
-	unsigned int  temp = tab[a];
-	tab[a] = b;
-	tab[b] = temp;
-
-
-}
-void showBits(unsigned int* tab, int max)
-{
-	/*int pos; int l;
-	while ()
-	{
-		if (GetBit(pos, &tab[pos]))
-			pos++;
-	}
-		
-	 
-	*/
-
-}
+#else
 
 int test_voirbloc()
 {
-
-
-	unsigned int TEST_Tableau[4] = {
+	unsigned int TEST_Taille = 5;
+	unsigned int TEST_Tableau[5] = {
+	0xFFFFFFFF,
 	1,
-	7,
-	256,
+	2,
+	4,
+	8/*,
 	16,
-	/*220,
-	2220,
-	350,
-	3476,
-	35678,
-	468393*/
+	32,
+	64,
+	128,
+	256	*/
 	};
 
+	unsigned int TEST_NbBitsAfficher = 8;
 
-	unsigned int TEST_Taille = 4;
+	t_permut_bits tablo;
 
-
-	unsigned int TEST_NbBitsAfficher = 11;
-
+	tablo.n1 = 0;
+	tablo.n2 = 6;
+	tablo.taille_bloc = 8;
 
 	voirbloc(TEST_Tableau, TEST_Taille, TEST_NbBitsAfficher);
 
+	permute2Blocs(TEST_Tableau, 5, &tablo);
 
+	voirbloc(TEST_Tableau, TEST_Taille, TEST_NbBitsAfficher);
 
 
 	system("pause");
 
 	return EXIT_SUCCESS;
 }
+
+#endif

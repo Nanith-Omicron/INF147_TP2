@@ -7,8 +7,7 @@
 //et un couple de deux entiers (n1, n2) donnant la position des deux blocs.
 typedef struct{
      int n1; // position du premier bloc
-     int n2; // position du second bloc, n1≠n2 test
-
+     int n2; // position du second bloc, n1≠n2
      int taille_bloc; // taille du bloc de bits 
 }t_permut_bits; 
 
