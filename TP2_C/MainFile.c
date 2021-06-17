@@ -18,16 +18,16 @@
 	 <hr width="100%" height="5">
 */
 //** **************************************************************************
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
 #include "constantes.h"
 #include "fonctions.h"
 #include "op_bits.h"
 #include "mtwister.h"
 #include "t_arrangement.h"
-
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
 
 
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
@@ -39,26 +39,24 @@ int test_voirbloc();
 int main(int argc, char** argv)
 {
 
-	unsigned int clee = solicitationClee();
-	
-
-	initialiser_Instruction(
-		16, //int iNombrePermutation,
-		40, //int iTailleOctets,
-		3, //int iBornMin,
-		10, //int iBornMax,
-		clee //unsigned long Clef
-	);
-
-	//test_voirbloc();
+	test_voirbloc();
 
 	return EXIT_SUCCESS;
-}
+} 
+	
 
- 
 
 int test_voirbloc()
 {
+	unsigned long clee = solicitationClee();
+
+	initialiser_Instruction(
+		16,			//int iNombrePermutation,
+		40,			//int iTailleOctets,
+		3,		    //int iBornMin,
+		10,			//int iBornMax,
+		clee		//unsigned long Clef
+	);
 
 	/*
 	unsigned int TEST_Taille =10;

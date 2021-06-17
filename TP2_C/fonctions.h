@@ -36,7 +36,7 @@ Ete 2021
 * RETOUR:	clee
 *
 */
-unsigned int solicitationClee(void);
+unsigned long solicitationClee(void);
 
 
 #endif __FUNCTION__

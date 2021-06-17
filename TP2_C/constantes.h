@@ -1,3 +1,5 @@
+#ifndef __CONSTANTES__
+#define __CONSTANTES__
 /*
 COURS INF147
 DEVOIR #2
@@ -17,3 +19,7 @@ Ete 2021
 */
 
 #define MAX_UINT 4294967295
+
+
+
+#endif __CONSTANTES__

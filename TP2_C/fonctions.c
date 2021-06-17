@@ -20,16 +20,16 @@ Ete 2021
 /*
 fonction qui sollicite l'utilisateur pour la clee
 */
-unsigned int solicitationClee(void)
+unsigned long solicitationClee(void)
 {
-	unsigned int clee = 0;// valeur a retourner
+	unsigned long clee = 0;// valeur a retourner
 	
 	do
 	{
 	printf("Entrez la clee!!!:\n");
-	scanf("%u", &clee);
-	}
-	while (clee > 0 && clee < 111111)
+	scanf("%lu", &clee);
+	} 	
+	while (clee > 0 && clee < 111111);
 
 	return clee;
 }
