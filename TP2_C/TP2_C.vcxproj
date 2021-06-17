@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fonctions.c" />
     <ClCompile Include="MainFile.c" />
     <ClCompile Include="mtwister.c" />
     <ClCompile Include="op_bits.c" />

@@ -27,6 +27,9 @@
     <ClCompile Include="t_arrangement.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fonctions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fonctions.h">
