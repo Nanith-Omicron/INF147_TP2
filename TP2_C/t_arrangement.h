@@ -2,6 +2,7 @@
 #define __T_ARRANGEMENT__
 
 #include "t_permutation.h"
+#include "mtwister.h"
 
 /*
 Un arrangement
@@ -34,10 +35,13 @@ typedef struct{
 * Tous les autres sous-programmes sont privés (dans le .c)
 */
 
+t_arrange_bits initialiser_Instruction(
+	int iNombrePermutation,
+	int iTailleOctets,
+	int iBornMin,
+	int iBornMax,
+	unsigned long Clef
+	);
 
-
-void permute2Bits(void* vTableau, unsigned int position, int decalage);
-int permute2Blocs(void* vTableau, int iTaille, t_permut_bits* t_Info_Permutation);
-void initialiser_Tableau();
 
 #endif __T_ARRANGEMENT__
