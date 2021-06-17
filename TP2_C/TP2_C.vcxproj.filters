@@ -29,17 +29,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mtwister.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="fonctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constantes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="op_bits.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mtwister.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="t_arrangement.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="t_permutation.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

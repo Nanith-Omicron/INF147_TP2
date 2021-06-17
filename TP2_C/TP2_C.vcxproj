@@ -159,6 +159,8 @@
     <ClCompile Include="t_arrangement.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="constantes.h" />
+    <ClInclude Include="fonctions.h" />
     <ClInclude Include="mtwister.h" />
     <ClInclude Include="op_bits.h" />
     <ClInclude Include="t_arrangement.h" />

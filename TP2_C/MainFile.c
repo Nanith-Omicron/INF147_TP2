@@ -39,6 +39,8 @@ int test_voirbloc();
 int main(int argc, char** argv)
 {
 
+	unsigned long clee;
+	clee = solicitationClee();
 	test_voirbloc();
 
 	return EXIT_SUCCESS;
@@ -48,8 +50,8 @@ int main(int argc, char** argv)
 
 int test_voirbloc()
 {
-	unsigned long clee = solicitationClee();
 
+	unsigned int clee = 1;
 	initialiser_Instruction(
 		16,			//int iNombrePermutation,
 		40,			//int iTailleOctets,
