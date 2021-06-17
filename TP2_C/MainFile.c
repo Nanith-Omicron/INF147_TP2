@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-#define DEGUB
+#define DEBUG
 #pragma warning(disable:4996)       //Disable les erreurs de scanf -> scanf_s
 
 
