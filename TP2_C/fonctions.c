@@ -15,28 +15,21 @@ PARTICIPANTS:
 Ecole de Technologie Superieure (ETS) © 2021
 Ete 2021
 */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <constantes.h>
-
-#include "mtwister.h"
-#include "t_arrangement.h"
-#include "t_permutation.h"
+#include "fonctions.h"
 
 /*
 fonction qui sollicite l'utilisateur pour la clee
 */
-unsigned int solicitationClee()
+unsigned int solicitationClee(void)
 {
-	unsigned int clee;// valeur a retourner
+	unsigned int clee = 0;// valeur a retourner
 	
 	do
 	{
-		printf("Entrez la clee!!!:\n");
-		scanf("%u", &clee);
+	printf("Entrez la clee!!!:\n");
+	scanf("%u", &clee);
 	}
-	while (clee > 0 && clee < MAX_UINT)
+	while (clee > 0 && clee < 111111)
 
 	return clee;
 }

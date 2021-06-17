@@ -1,3 +1,5 @@
+#ifndef __FUNCTION__
+#define __FUNCTION__
 /*
 COURS INF147
 TP	  #2
@@ -18,11 +20,11 @@ Ete 2021
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <constantes.h>
 
 #include "mtwister.h"
 #include "t_arrangement.h"
 #include "t_permutation.h"
+#include "constantes.h"
 
 /*
 * int solicitationClee()
@@ -34,4 +36,7 @@ Ete 2021
 * RETOUR:	clee
 *
 */
-int solicitationClee();
+unsigned int solicitationClee(void);
+
+
+#endif __FUNCTION__

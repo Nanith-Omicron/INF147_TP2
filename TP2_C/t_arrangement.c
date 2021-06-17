@@ -22,7 +22,7 @@
 #include "t_arrangement.h"
 #include <stdio.h>
 
-void permute2Bits( void * vTableau, unsigned int position, int decalage);
+void permute2Bits(void* vTableau, unsigned int position, unsigned int decalage);
 int permute2Blocs(void* vTableau, int iTaille, t_permut_bits *t_Info_Permutation);
 
 

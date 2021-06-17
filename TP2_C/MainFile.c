@@ -39,17 +39,8 @@ int test_voirbloc();
 int main(int argc, char** argv)
 {
 
-	test_voirbloc();
-
-	return EXIT_SUCCESS;
-}
-
- 
-
-int test_voirbloc()
-{
-	unsigned int clee;
-	clee = solicitationClee;
+	unsigned int clee = solicitationClee();
+	
 
 	initialiser_Instruction(
 		16, //int iNombrePermutation,
@@ -58,6 +49,16 @@ int test_voirbloc()
 		10, //int iBornMax,
 		clee //unsigned long Clef
 	);
+
+	//test_voirbloc();
+
+	return EXIT_SUCCESS;
+}
+
+ 
+
+int test_voirbloc()
+{
 
 	/*
 	unsigned int TEST_Taille =10;
